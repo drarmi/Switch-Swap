@@ -4,7 +4,6 @@
 
 
 
-
 function storefront_child_enqueue_styles()
 {
     wp_enqueue_style('storefront-style-parent', get_template_directory_uri() . '/style.css');
