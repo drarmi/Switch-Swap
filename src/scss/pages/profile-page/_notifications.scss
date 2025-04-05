@@ -1,0 +1,83 @@
+@import '../../base/_mixins.scss';
+@import '../../base/_variables.scss';
+@import '../../base/_colors.scss';
+
+section.notification_management {
+    
+    .personal_notifications-form{
+        form{
+            ul{
+                margin: 0;
+
+                li{ 
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    align-items: center;
+                    border-bottom: 0.5px solid #00000033;
+                    justify-content: space-between;
+                    text-align: right;
+                    padding: 9px 0px;
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    
+
+                    .switch-box{
+                        cursor: pointer;
+                        width: 46px;
+                        height: 27px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        border-radius: 27px;
+                        padding: 3px;
+                        background-color: $color-F0ECE6;
+                        transition: all 200ms linear;
+
+                        &::before{
+                            transition: all 200ms linear;
+                            content: "";
+                            background-color: $color-fff;
+                            box-shadow: 0px 6px 13px 0px #0000001F;
+                            height: 21px;
+                            width: 21px;
+                            border-radius: 21px;
+                        }
+                    }
+
+                    &[data-notification-status="1"]{
+                        .switch-box{
+                            background: $color-111111;
+                            justify-content: flex-end;
+                        }
+                    }
+    
+                    .notification-tex{
+                        display: flex;
+                        flex-direction: column;
+
+                        p{
+                            font-size: 12px;
+                            color: $color-858585;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                        }
+
+                        h5{
+                            font-size: 14px;
+                            color: $color-111111;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    input{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

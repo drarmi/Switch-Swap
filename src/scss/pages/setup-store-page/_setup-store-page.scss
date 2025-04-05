@@ -1,0 +1,57 @@
+@import "./_start.scss";
+@import "./_form.scss";
+@import "./_final.scss";
+
+.main-container.setup{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+
+    section nav.setup{
+        padding: 11px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>div{
+            cursor: pointer;
+        }
+    }
+
+    h2.setup-title{
+        margin-bottom: 0;
+        color: #0D0D0D;
+        font-size: 32px;
+        line-height: 1.3em;
+        font-weight: 600;
+    }
+
+    .setup-btn{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5dvh 0;
+
+        button{
+            padding: 14px 20px;
+            min-width: 271px;
+            text-align: center;
+            color: $color-fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 500;
+
+            &.gold{
+                background-color: $color-8F6B45;
+            }
+            &.black{
+                background-color: $color-111111;
+            }
+        }
+        
+    }
+}
+

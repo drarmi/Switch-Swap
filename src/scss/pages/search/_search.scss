@@ -1,0 +1,189 @@
+.search-page-wrapper {
+    position: relative;
+    min-height: 90vh;
+    &.active .products {
+        filter: blur(3px);
+    }
+
+    .search-input-wrapper {
+        margin-bottom: 24px;
+
+        input {
+            border: 0;
+            background: transparent;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: -1%;
+            text-align: center;
+            color: #111111;
+            box-shadow: none;
+            padding: 4.5px 30px;
+
+            &::placeholder {
+                color: #858585;
+            }
+        }
+    }
+
+    .trending-search,
+    .search-history {
+        margin-bottom: 44px;
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+
+            .history-item {
+                background: #F0ECE6;
+                border-radius: 10px;
+                padding: 6.5px 13px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0.14px;
+                text-align: center;
+                color: #262626;
+                white-space: nowrap;
+
+                &.active {
+                    background: #111111;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .last-search {
+            display: none;
+        }
+    }
+
+    .trending-search {
+        display: flex;
+        overflow-x: auto;
+        align-items: center;
+        gap: 8px;
+
+        h3 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #858585;
+            margin: 0; 
+        }
+        .tags {
+            overflow-x: unset;
+        }
+    }
+
+    .search-summary {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #595959;
+        }
+    }
+
+    .products {
+        margin-top: 20px;
+
+        .products-inner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            .swap-product {
+                width: calc(50% - 4px);
+            }
+        }
+    }
+
+    .loader {
+        display: block;
+        margin: 30px auto;
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid #111;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        animation:
+            l20-1 0.8s infinite linear alternate,
+            l20-2 1.6s infinite linear;
+    }
+
+    @keyframes l20-1 {
+        0% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+        }
+
+        12.5% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+        }
+
+        25% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+        }
+
+        50% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        62.5% {
+            clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        75% {
+            clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        100% {
+            clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+        }
+    }
+
+    @keyframes l20-2 {
+        0% {
+            transform: scaleY(1) rotate(0deg)
+        }
+
+        49.99% {
+            transform: scaleY(1) rotate(135deg)
+        }
+
+        50% {
+            transform: scaleY(-1) rotate(0deg)
+        }
+
+        100% {
+            transform: scaleY(-1) rotate(-135deg)
+        }
+    }
+
+    .end-message {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        color: #858585;
+        margin: 53px auto 34px;
+        display: block;
+    }
+
+    .section-title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #595959;
+    }
+}

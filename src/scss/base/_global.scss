@@ -1,0 +1,96 @@
+@import "_normalize.scss"; // Import normalize
+@import "_mixins.scss"; // Import mixins
+@import "_variables.scss"; // Import variables
+@import "_colors.scss"; // Import colors
+
+
+p {
+    margin: 0 0 1.41575em;
+}
+
+@import "_normalize.scss"; // Import normalize
+@import "_mixins.scss"; // Import mixins
+@import "_variables.scss"; // Import variables
+@import "_colors.scss"; // Import colors
+
+
+body {
+    background: #ededed;
+    color: #111;
+}
+p {
+    margin: 0 0 1.41575em;
+}
+.main-container {
+    max-width: 480px;
+    margin: auto;
+    background: #fff;
+    padding: 0 16px;
+    box-shadow: 0 0 30px #00000010;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56px;
+}
+.admin-bar .main-container {
+    min-height: calc(100vh - 32px);
+
+}
+
+.section-block {
+    margin: 8px 0;
+}
+
+/* Section Heading
+   -------------------------------------------------------------------------- */
+.section-heading {  
+    margin: 16px 0;
+}
+.section-heading--space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-heading--center {
+    text-align: center;
+}
+.section-heading__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 2.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-heading__title--arrow a {
+    text-decoration: none;
+    display: block;
+}
+.section-heading__title--arrow:after {
+    border: 2px solid;
+    border-top: 0;
+    border-right: 0;
+    content: "";
+    display: inline-block;
+    height: 9px;
+    margin-top: 3px;
+    rotate: 45deg;
+    width: 9px;
+    margin-left: 10px;
+}
+.section-heading__title--small {
+    font-size: 20px;
+}
+.section-heading__link {
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+
+.swap-tab-panel {
+    display: none;
+}
+.swap-tab-panel.active {
+    display: block;
+}

@@ -1,0 +1,149 @@
+@import '../../base/_mixins.scss';
+@import '../../base/_variables.scss';
+@import '../../base/_colors.scss';
+
+section.personal_details {
+    .personal_details-form {
+        button {
+            width: 100%;
+            padding: 16px;
+        }
+
+        .change_password {
+            display: block;
+            width: 100%;
+            text-align: end;
+            padding: 16px 0;
+            color: $color-8F6B45;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .logo-wrap {
+            margin: 0 auto;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 24px;
+
+            input {
+                display: none;
+            }
+
+            .edit-logo {
+                width: fit-content;
+                position: absolute;
+                bottom: -4px;
+                right: 0;
+                transform: translateX(50%);
+                cursor: pointer;
+            }
+
+            img {
+                height: 90px;
+                width: 90px;
+                border-radius: 90px;
+                object-fit: cover;
+            }
+        }
+        .details-section-title {
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background-color: $color-F5F3F0;
+            color: $color-858585;
+            font-size: 700;
+            font-weight: 14px;
+            line-height: 1.3em;
+        }
+
+        .input-wrap {
+            .textarea-details-wrapper {
+                position: relative;
+                direction: rtl;
+                margin-bottom: 10px;
+
+                .details-count {
+                    position: absolute;
+                    left: 16px;
+                    bottom: 16px;
+                    color: $color-858585;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                .details-title {
+                    position: absolute;
+                    right: 16px;
+                    top: 16px;
+                    color: $color-858585;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                textarea {
+                    color: $color-111111;
+                    font-size: 17px;
+                    font-weight: 400;
+                    padding: 45px 16px;
+                    background: transparent;
+                    border: 0.5px solid #0000004d;
+                    outline: none;
+                    box-shadow: none;
+                    border-radius: 4px;
+                    min-height: 160px;
+                }
+            }
+            .input-details-wrapper {
+                position: relative;
+                direction: rtl;
+                margin-bottom: 10px;
+
+                input {
+                    color: $color-111111;
+                    font-size: 17px;
+                    font-weight: 400;
+                    text-align: left;
+                    padding: 11px 90px 11px 16px;
+                    background: transparent;
+                    border: 0.5px solid #0000004d;
+                    outline: none;
+                    box-shadow: none;
+                    width: 100%;
+                    border-radius: 4px;
+
+                    &[type='date'] {
+                        cursor: pointer;
+                        position: relative;
+                        &::-webkit-calendar-picker-indicator {
+                            width: 100%;
+                            opacity: 0;
+                            height: 100%;
+                            position: absolute;
+                            left: 16px;
+                            cursor: pointer;
+                        }
+                    }
+                    &[type='number']::-webkit-inner-spin-button,
+                    &[type='number']::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    &[type='number'] {
+                        -moz-appearance: textfield;
+                    }
+                }
+                .details-title {
+                    position: absolute;
+                    right: 16px;
+                    top: 15px;
+                    color: $color-858585;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

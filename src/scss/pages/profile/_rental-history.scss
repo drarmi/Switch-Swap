@@ -1,0 +1,55 @@
+
+.rental-history__details {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+    margin-bottom: 20px;
+}
+.rental-history__details-date {
+    font-size: 12px;
+    color: #595959;
+    margin-bottom: 8px;
+}
+.rental-history__details-order {
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.rental-history__details-price {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rental-history__items {
+    display: flex;
+    gap: 8px;
+    overflow: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    margin-left: -16px;
+}
+.rental-history__items::-webkit-scrollbar {
+    display: none;
+}
+.rental-history__item {
+    max-width: 128px;
+    padding: 15px;
+}
+
+.rental-history__item:first-child {
+    margin-inline-start: -16px;
+}
+.rental-history__item-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 6px;
+}
+.rental-history__item-image {
+    min-width: 83px;
+    max-width: 98px;
+    border: 1px solid rgba(0,0,0,0.10);
+    border-radius: 4px;
+}

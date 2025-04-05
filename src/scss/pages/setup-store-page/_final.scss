@@ -1,0 +1,127 @@
+@import '../../base/_mixins.scss';
+@import '../../base/_variables.scss';
+@import '../../base/_colors.scss';
+
+section.setup-final{
+    display: none;
+    .top-content{
+        background: $color-F5F3F0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        gap: 12px;
+        margin-bottom: 50px;
+
+        .logo-final{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 128px;
+            width: 128px;
+            box-shadow: 0px 0px 4px 0px #00000026;
+            border-radius: 128px;
+
+            img{
+                height: 128px;
+                width: 128px;
+                border-radius: 128px;
+                object-fit: cover;
+            }
+        }
+
+        .store-name{
+            font-size: 32px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.3em;
+        }
+    }
+    
+    .product-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        h2{
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1em;
+            text-align: center;
+            color: $color-0D0D0D;
+
+            &>div{
+                position: relative;
+
+                &:nth-child(1){
+                    .img{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0px;
+                    }
+                }
+                &:nth-child(2){
+                    .img{
+                        position: absolute;
+                        bottom: -14px;
+                    }
+                }
+            }
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 0;
+            color: $color-111111;
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .control-final{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+        .add-new-product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: $color-8F6B45;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .close-final-section{
+            button{
+                background-color: $color-111111;
+                font-size: 17px;
+                font-weight: 500;
+                padding: 12px;
+                min-width: 217px;
+                text-align: center;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        .submit-vendor-btn {
+            width: 310px;
+            display: block;
+            border-radius: 4px;
+            background: #000;
+
+        }
+    }
+}
+
+

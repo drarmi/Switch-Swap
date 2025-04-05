@@ -1,0 +1,155 @@
+@import "../base/_mixins.scss";
+@import "../base/_variables.scss";
+@import "../base/_colors.scss";
+
+
+#masthead{
+    background-color: $color-fff;
+}
+
+.mobile-nav {
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    align-items: center;
+}
+.nav-trigger {
+    background: none;
+    padding: 3px;
+    margin: 0;
+}
+.header__end-bar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 96px;
+    background: #fff; 
+    transform: translateX(100%);
+    transition: transform 250ms ease;
+    padding: 0 16px; 
+    z-index: 99;
+    height: 100dvh;
+}
+.admin-bar .nav {
+    height: calc(100dvh - 32px);
+}
+@media (max-width: 480px) {
+    .admin-bar .nav {
+        height: calc(100dvh - 46px);
+    }
+}
+
+.mobile-nav .nav {
+    transform: translateX(0%);
+}
+.nav__header {
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+}
+.nav__close {
+    background: none;
+    padding: 0;
+    margin: 0;
+    padding: 8px;
+}
+.main-container {
+    position: relative;
+}
+.main-container:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity  250ms ease;
+    z-index: 10;
+}
+.mobile-nav .main-container:after  {
+    visibility: visible;
+    opacity: 0.4;
+}
+.header-menu {
+    margin: 0;
+}
+.header-menu a {
+    display: flex;
+    font-size: 1.0625rem;
+    height: 53px;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.header-menu a:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-left: 2px solid #BFBFBF;
+    border-top: 2px solid #BFBFBF; 
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    rotate: -45deg;
+}
+.header-menu .current-menu-item a {
+    color: #8F6B45;
+    font-weight: 600;
+}
+.madebyomnis {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    font-weight: 300;
+    justify-content: center;
+    position: sticky;
+    top: 100%;
+    color: #595959;
+    gap: 3px;
+    border-top: 1px solid #00000020;
+    margin: 16px;
+    padding-top: 12px;
+}
+.madebyomnis__text {
+    padding-top: 6px;
+}
+.swap-logo {
+    text-decoration: none;
+}
+
+/* Home Navigation
+   -------------------------------------------------------------------------- */
+.home-menu {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0 16px;
+    height: 41px;
+    align-items: center;
+    font-size: .875rem;
+}
+.home-menu a {
+    text-decoration: none;
+}
+.home-nav .current-menu-item {
+    font-weight: 600;
+    border-bottom: 2px solid;
+    font-size: 0.75rem;
+}
+
+
+
+.page-template-profile_page .header nav ul li:first-child svg {
+    fill: #000
+}

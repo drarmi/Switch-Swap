@@ -1,0 +1,12 @@
+import './home-page';
+//import './profile-page';
+import './setup-page';
+import './registration'; 
+import './customer-registration';
+import './lost-password';
+import './product';
+import './product-management';
+import './upload';
+import './reports-data';
+import './dokan-review';
+import './search';

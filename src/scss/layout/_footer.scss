@@ -1,0 +1,19 @@
+@import "../base/_mixins.scss";
+@import "../base/_variables.scss";
+@import "../base/_colors.scss";
+
+.swap-footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 480px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.footer-nav {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,139 @@
+html {
+    direction: rtl;
+}
+.main-container.profile header {
+    justify-content: space-between;
+    .seller-earnings {
+        font-size: 14px;
+        font-weight: 600;
+        color: #565656;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+
+    .seller-earnings__accent {
+ 
+        color: #fff;
+        background: #000;
+        border-radius: 4px;
+        padding: 4px 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+
+.edit-btn {
+    height: 36px;
+    width: 36px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+
+}
+
+
+.store-creation-prompt {
+
+}
+.store-creation-prompt__head {
+    text-align: center;
+    .avatar {
+        margin: auto;
+        border-radius: 50%;
+        max-width: 88px;
+    }
+}
+.store-creation-prompt__avatar {
+    position: relative;
+    max-width: 88px;
+    margin: 26px auto 14px;
+
+    .edit-btn {
+        position: absolute;
+        right: -16px;
+        bottom: 0;
+    }
+
+
+}
+.store-creation-prompt__head-user {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.store-creation-prompt__head-email {
+    color: #595959;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.store-creation-prompt__body {
+    border-radius: 4px;
+    background: #F5F3F0;
+}
+.store-creation-prompt__body-wrap {
+    max-width: 217px;
+    margin: auto;
+    padding: 50px 0;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+
+}
+.store-creation-prompt__title-wrap {
+    position: relative;
+    margin-bottom: 22px;
+    .star-dec {
+        position: absolute;
+    }
+    .star-dec--left {
+        left: -20px;
+        top: -4px;
+    }
+    .star-dec--right {
+        right: -24px;
+        bottom: 14px;
+    }
+    .star-dec--fade {
+        right: -16px;
+        top: 20px;
+    }
+}
+.store-creation-prompt__title {
+    font-weight: 600;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+.store-creation-prompt__info {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 12px 0 24px;
+}
+
+.store-creation-prompt__btn {
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    padding: 11px 0;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.store-creation-prompt__how {
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+    span {
+        opacity: .4;
+    }
+}

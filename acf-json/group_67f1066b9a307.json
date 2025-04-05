@@ -1,0 +1,180 @@
+{
+    "key": "group_67f1066b9a307",
+    "title": "Search Page",
+    "fields": [
+        {
+            "key": "field_67f1066e2b74e",
+            "label": "Placeholder",
+            "name": "search_placeholder",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field defines the placeholder text for the search input field. It replaces the hardcoded placeholder \"...התחילי לחפש כאן\" (Start typing your search).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f1083ab6e66",
+            "label": "Recent search title",
+            "name": "recent_search_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field holds the title text displayed when a user has previous searches. It replaces the hardcoded string \"חיפושים אחרונים:\" (Recent Searches:).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f10ab9b6e67",
+            "label": "Trending title",
+            "name": "default_trending_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field contains the title text displayed when the search history is empty. It replaces the hardcoded string \"אולי תהיו מעוניינים ב:\" (You Might Be Interested In:).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f10ad2b6e68",
+            "label": "Trending header",
+            "name": "trending_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field contains the header text for the trending section. It replaces the hardcoded \"טרנדי:\" (Trending:).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f10b2ab6e69",
+            "label": "Results text",
+            "name": "results_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field holds the text used to denote the number of results when there are search results (e.g. \"results\").",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f10b5cb6e6a",
+            "label": "No results text",
+            "name": "no_results_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field holds the text used to denote when no search results are found (e.g. \"no results\").",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67f106952b74f",
+            "label": "Image SVG (No results)",
+            "name": "image_svg_no_results",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "svg",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-parts\/search.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1743850382
+}

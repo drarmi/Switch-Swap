@@ -1,0 +1,314 @@
+@import '../../base/_mixins.scss';
+@import '../../base/_variables.scss';
+@import '../../base/_colors.scss';
+
+section.setup-form {
+    flex-grow: 1;
+    display: none;
+    flex-direction: column;
+
+    .form-header {
+        padding-bottom: 40px;
+
+        text-align: center;
+        p {
+            margin: 0;
+            color: $color-595959;
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+
+    form {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        input[type="file"][name="store-logo"]{
+            display: none;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+
+            .name_store {
+                position: relative;
+                margin-bottom: 8px;
+
+                span {
+                    position: absolute;
+                    right: 16px;
+                    top: 14px;
+                    color: #00000066;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                input {
+                    background: transparent;
+                    box-shadow: none;
+                    border: 0.5px solid #0000004d;
+                    color: $color-0D0D0D;
+                    font-size: 17px;
+                    font-weight: 400;
+                    direction: rtl;
+                    text-align: left;
+                    height: 44px;
+                    border-radius: 4px;
+                    outline: none;
+                    padding: 11px 95px 11px 11px;
+                    transition: all linear 100ms;
+
+                    &:focus {
+                        border: 1.5px solid $color-8F6B45;
+                    }
+
+                    &::placeholder {
+                        color: $color-BFBFBF;
+                        font-size: 17px;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
+            }
+            .store-biography {
+                position: relative;
+
+                & > span {
+                    position: absolute;
+                    right: 16px;
+                    top: 14px;
+                    color: #00000066;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                textarea {
+                    background: transparent;
+                    box-shadow: none;
+                    border: 0.5px solid #0000004d;
+                    color: $color-0D0D0D;
+                    font-size: 17px;
+                    font-weight: 400;
+                    direction: rtl;
+                    text-align: left;
+                    height: 44px;
+                    border-radius: 4px;
+                    outline: none;
+                    transition: all linear 100ms;
+                    padding: 11px;
+
+                    &:focus {
+                        border: 1.5px solid $color-8F6B45;
+                    }
+
+                    &::placeholder {
+                        color: $color-BFBFBF;
+                        font-size: 17px;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
+
+                .store-biography-count {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 11px;
+                    color: $color-8F6B45;
+                    font-size: 12px;
+                    font-weight: 600;
+                    display: none;
+                }
+
+                &.with-text {
+                    textarea {
+                        height: auto;
+                        padding-top: 40px;
+                        padding-bottom: 28px;
+                        text-align: right;
+                    }
+                    .store-biography-count {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &[novalidate]{
+            .form-section{
+                textarea.parsley-error~.store-biography-count {
+                    bottom: 23px;
+                }
+            }
+        }
+        .logo-section {
+            flex-grow: 1;
+            display: none;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+
+            .logo-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 128px;
+                width: 128px;
+                border-radius: 128px;
+                border: 0.5px solid #00000033;
+                cursor: pointer;
+            }
+
+            .store-name{
+                font-size: 32px;
+                line-height: 1.3em;
+                font-weight: 400;
+                color: $color-0D0D0D;
+            }
+        }
+
+        .logo-section-config {
+            flex-grow: 1;
+            display: none;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+
+            .logo-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 128px;
+                width: 128px;
+
+                img{
+                    height: 128px;
+                    width: 128px;
+                    border-radius: 128px;
+                    object-fit: cover;
+                }
+
+                svg{
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+            .store-name{
+                font-size: 32px;
+                line-height: 1.3em;
+                font-weight: 400;
+                color: $color-0D0D0D;
+            }
+        }
+
+        .logo-modal-wrapper{
+            position: absolute;
+            background: #00000033;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            padding-bottom: 34px;
+            padding-inline: 8px;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            .btn-sections{
+                width: 100%;
+                .btn-section{
+                    border-radius: 8px;
+                    overflow: hidden;
+                    margin-bottom: 8px;
+
+                    .control-btn{
+                        background: $color-fff;
+                        padding: 16px;
+                        border-bottom: 0.33px solid var(--miscellaneous-alert-menu-action-sheet-separators, #8080808C);
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        gap: 12px;
+                        color: $color-8F6B45;
+                        font-size: 17px;
+                        font-weight: 400;
+                        cursor: pointer;
+
+                        &.remove{
+                            color: $color-E22400;
+                        }
+                    }
+
+                    .close-btn{
+                        color: $color-fff;
+                        background: $color-000000;
+                        font-size: 17px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        padding: 16px;
+                        text-align: center;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+
+        .camera-wrap-editor{
+            display: none;
+            position: absolute;
+            bottom: 20px;
+
+            .close-stream{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            #video-editor{
+                height: 100%;
+                border-radius: 4px;
+            }
+
+            #captureBtn-editor{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background: red;
+                z-index: 3;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+                z-index: 4;
+            }
+
+            #saveBtn-editor{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+                background: black;
+                border-radius: 4px;
+                z-index: 10;
+            }
+            #snapshot-editor{
+                position: absolute;
+                z-index: 5;
+                top: 0;
+            }
+        }
+    }
+}

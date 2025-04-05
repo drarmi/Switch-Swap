@@ -1,0 +1,28 @@
+.like-favorites-js{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.251);
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    width: 36px;
+    cursor: pointer;
+
+    &.active {
+        svg {
+            fill: $color-111111;
+        }
+    }
+
+    &.absolute{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 2;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

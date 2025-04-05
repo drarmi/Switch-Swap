@@ -1,0 +1,111 @@
+.popup-reviews {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    bottom: 0;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 0 15px #000;
+    padding: 24px;
+    margin-bottom: 36px;
+}
+.rating-stats {
+    margin: 0 0 32px;
+}
+.rating-stats__progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.10);
+    position: relative;
+}
+.rating-stats__progress-line {
+    height: inherit;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+}
+.rating-stats__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+.rating-stats__qnt {
+    min-width: 26px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.commentlist {
+    margin: 0;
+}
+.commentlist--swipe .product-comment {
+    max-width: 313px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 16px;
+
+}
+.product-comment__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.product-comment__details {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.dashboard__author-image {
+    border-radius: 50%;
+}
+.product-comment__author {
+    font-size: 17px;
+    font-weight: 600;
+}
+.product-comment__rent-size {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+}
+.product-comment__text {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.product-comment__date {
+    font-size: 12px;
+    color: #858585;
+}
+.product-comments-list {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 8px;
+    margin-left: -16px;
+    overflow: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+.product-comments-list::-webkit-scrollbar {
+    display: none;
+} 
+.product-comment__product-images {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+.product-comment__product-image {
+    max-width: 73px;
+}
+
+

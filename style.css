@@ -1,0 +1,17 @@
+/*
+Theme Name: SWAP
+Template: storefront
+Author: omnis
+Description: Child theme for Storefront
+Version: 1.0.0
+Text Domain: swap
+*/
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+
+}

@@ -1,0 +1,181 @@
+//@import "../../base/_mixins.scss";
+//@import "../../base/_variables.scss";
+//@import "../../base/_colors.scss";
+
+
+.how-it-works-section {
+    border: 1px solid #BFBFBF;
+    padding: 4px 16px 16px;
+}
+.how-it-works {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin: 16px 0 0;
+    font-size: 0.75rem;
+}
+.how-it-works__step {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.how-it-works__icon {
+    display: block;
+    height: 38px;
+}
+
+
+.banner {
+    position: relative;
+}
+.banner__close-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: none;
+    padding: 8px;
+}
+.banner__close-btn:hover {
+    background: #ffffff10;
+}
+.banner__info {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.product-cats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+}
+.product-cat {
+    display: grid;
+    justify-items: center;
+}
+.product-cat__icon-wrap {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-cat__icon {
+    zoom: 70%;
+}
+
+
+.sellers-list {
+    display: flex;
+    margin: 0;
+}
+
+
+/* Rent By Budget
+   -------------------------------------------------------------------------- */
+.rent-by-budget__list {
+    display: flex;
+    gap: 8px;
+
+}
+.rent-by-budget__list-item {
+    border: 1px solid #00000020;
+    width: 128px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    sub {
+        font-size: 1.25rem;
+    }
+    sup {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Products
+   -------------------------------------------------------------------------- */
+.swap-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 8px;
+}
+.swap-product__media {
+    position: relative;
+}
+.swap-product__like {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swap-product__tag {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: #3D240F;
+    color: #fff;
+    font-size: .75rem;
+    border-radius: 30px;
+    line-height: 1;
+    padding: 4px 10px;
+}
+.swap-product__image {
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+.swap-product__details {
+    padding-top: 12px;
+    padding-right: 8px;
+}
+.swap-product__details > * {
+    margin-bottom: 6px;
+}
+.swap-product__title {
+    font-size: .875rem;
+    font-weight: 600;
+    a {
+        text-decoration: none;
+        font-weight: inherit;
+    }
+}
+.swap-product__desc {
+    color: #6E6E6E;
+    font-size: .75rem; 
+    line-height: 1.2;
+    p {
+        margin: 0;
+    }
+}
+.swap-product__rent {
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    font-size: .875rem;
+}
+.swap-product__amount {
+    display: flex;
+    gap: 4px;
+    font-size: .75rem;
+    ins {
+        color: #E22400;
+        font-weight: normal;
+    }
+}
+.swap-product__proposals-allowed {
+    font-size: 12px;
+    font-weight: 550;
+}

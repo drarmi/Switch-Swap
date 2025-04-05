@@ -1,0 +1,87 @@
+// Import base SCSS files
+@import "./base/_mixins.scss";
+@import "./base/_variables.scss";
+@import "./base/_colors.scss";
+
+/* __________ TYPOGRAPHY BEGIN __________*/
+
+@import "./base/_typography.scss";
+
+/* __________ TYPOGRAPHY STYLE END __________*/
+
+/* __________ BASE STYLE BEGIN __________*/
+
+@import "./base/_global.scss";
+@import "./base/_rtl.scss";
+
+/* __________ BASE STYLE END __________*/
+
+/* __________ LAYOUT  BEGIN __________*/
+
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+
+/* __________ LAYOUT  BEGIN __________*/
+
+/* __________ COMPONENTS  BEGIN __________*/
+// @import "./components/modal/popup_quick_consultation";
+@import "./components/sections/cookie";
+@import "./components/btn/_like";
+@import "./components/modal/_modal";
+@import "./components/sections/reviews";
+
+
+/* __________ COMPONENTS  END __________*/
+
+/* __________ MODAL  BEGIN __________*/
+
+/* __________ MODAL  END __________*/
+
+/* __________  PAGE BEGIN __________*/
+
+@import "./pages/home-page/_home-page.scss";
+@import "./pages/404/_404-page.scss";
+@import "./pages/thank/thank.scss";
+@import "./pages/registration/_registration.scss";
+
+@import "./pages/customer-registration/_customer-registration.scss";
+@import "./pages/customer-registration/_lost-password.scss";
+
+@import "./pages/product/_management.scss";
+@import "./pages/product/_product.scss";
+@import "./pages/product/_upload.scss";
+@import "./pages/profile-page/_profile-page.scss";
+@import "./pages/setup-store-page/_setup-store-page.scss";
+
+
+@import "./pages/profile/_favorites.scss";
+@import "./pages/profile/_dashboard.scss";
+
+@import "./pages/profile/_store.scss";
+@import "./pages/store/store-buyer.scss";
+@import "./pages/store/store-creation-prompt.scss";
+
+
+
+@import "./pages/profile/_rental-history.scss";
+
+@import "./pages/orders/_history.scss";
+@import "./pages/orders/_review.scss";
+
+
+@import "./pages/search/_search.scss";
+
+/* __________  PAGE END __________*/
+
+/* __________  MODULES __________*/
+@import "../../node_modules/parsleyjs/src/parsley.css";
+@import '../../node_modules/jquery-ui/themes/base/all.css';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'pikaday/css/pikaday.css';
+@import 'parsleyjs/src/parsley.css';
+
+/* __________  MODULES END__________*/
+
+@import "vendor/vendor";  

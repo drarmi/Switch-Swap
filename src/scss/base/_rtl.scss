@@ -1,0 +1,16 @@
+.rtl {
+    direction: rtl;
+
+    .wpcf7 {
+        direction: rtl;
+        text-align: right;
+    }
+
+    .wpcf7-text,
+    .wpcf7-textarea,
+    .wpcf7-select {
+        direction: rtl !important;
+        text-align: right;
+    }
+
+}
